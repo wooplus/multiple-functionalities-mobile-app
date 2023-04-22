@@ -1,0 +1,23 @@
+.img-container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.puppy-img {
+  width: 350px;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+
+  padding: 1em;
+  right: 0;
+  left: 0;
+}
