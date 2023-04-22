@@ -10,7 +10,7 @@ body {
   user-select: none;
 }
 
-.container {
+.to-do-list-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,7 +63,7 @@ ul {
   gap: 8px;
 }
 
-ul li {
+ul .to-do-item {
   list-style-type: none;
   background-color: lightgreen;
   padding: 0.5em 0.5em;
@@ -72,7 +72,7 @@ ul li {
   font-size: 0.8rem;
 }
 
-ul li:hover {
+ul .to-do-item:hover {
   background-color: rgb(120, 240, 120);
   cursor: pointer;
 }

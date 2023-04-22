@@ -52,6 +52,7 @@ function clearTodoEl() {
 function appendTodoThingsEl(item) {
   const [itemID, itemValue] = item;
   const newEl = document.createElement("li");
+  newEl.classList.add("to-do-item");
   newEl.textContent = itemValue;
 
   newEl.addEventListener("click", function () {
