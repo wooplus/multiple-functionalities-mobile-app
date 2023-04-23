@@ -6,9 +6,15 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   user-select: none;
-  padding: 1em;
   background-color: rgb(33, 33, 33);
+}
+
+.events-container {
+  width: 500px;
+  margin: 0 auto;
 }
 
 img {
@@ -92,6 +98,7 @@ p {
   gap: 1em;
   padding: 0;
   list-style-type: none;
+  padding-bottom: 2em;
 }
 
 .reminder-tasks li {
