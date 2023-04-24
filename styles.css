@@ -1,3 +1,10 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+/* main css styles sheet  */
 .img-container {
   width: 400px;
   margin: 0 auto;
@@ -16,8 +23,305 @@
   position: fixed;
   bottom: 0;
   background-color: rgb(227, 87, 87);
-
   padding: 1em;
   right: 0;
   left: 0;
+}
+
+/* event reminder style sheet  */
+
+.events-container {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  user-select: none;
+  margin-bottom: 80px;
+  overflow: auto;
+}
+
+img {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+  text-align: center;
+  border-radius: 1em;
+}
+
+/* navigation bar  */
+
+.navbar li {
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 450px;
+}
+
+/* h3 {
+  text-align: center;
+  margin-bottom: 0.3em;
+} */
+
+/* fix  */
+input {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 1em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+/* p {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 auto;
+  color: rgb(170, 170, 170);
+} */
+
+.date-control {
+  display: block;
+  width: 14rem;
+  margin: 0.5rem auto;
+}
+
+/* fix */
+/* .btn {
+  display: block;
+  margin: 1rem auto;
+  width: 10rem;
+  background-color: rgb(253, 253, 132);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: rgb(253, 253, 91);
+} */
+
+.datetime {
+  cursor: pointer;
+  border: none;
+  background-color: lightcoral;
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  width: 14rem;
+  color: rgb(22, 22, 22);
+  user-select: none;
+  padding: 0.4em;
+  outline: none;
+  user-select: none;
+  margin: 0.5rem auto;
+}
+
+.reminder-tasks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 0;
+  list-style-type: none;
+  padding-bottom: 2em;
+}
+
+.reminder-tasks li {
+  text-align: center;
+  background-color: rgb(47, 104, 71);
+  /* flex-grow: 1; */
+  border-radius: 0.5em;
+  padding: 0.3em;
+  cursor: pointer;
+  border-left: 5px solid rgb(163, 90, 163);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: all 0.4s ease-in-out;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.reminder-tasks li:hover {
+  border-left: 15px solid rgb(137, 66, 137);
+  font-size: 1.2rem;
+}
+
+span {
+  font-size: 1rem;
+  color: rgb(255, 66, 66);
+}
+
+/* flash cards style sheet  */
+
+body {
+  background-color: aliceblue;
+  color: rgb(35, 35, 35);
+  padding: 0;
+  margin: 0;
+}
+
+.quizz-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  display: inline-block;
+  width: 90%;
+}
+
+.flashcard {
+  width: 90%;
+  height: 200px;
+  perspective: 1000px;
+  /* background-color: lightblue; */
+  color: rgb(33, 33, 33);
+  margin: 1em auto;
+  cursor: pointer;
+  border-radius: 1em;
+  transition: all 0.7s ease-in-out;
+}
+
+.flashcard p {
+  /* color: rgb(246, 246, 246); */
+  font-size: 0.7rem;
+}
+
+.quizz-title {
+  text-align: center;
+  background-color: aquamarine;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 1em;
+}
+
+.flash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: rgb(24, 24, 24);
+  border-radius: 1em;
+  /* margin: 0 auto 100px auto; */
+  margin-bottom: 100px;
+  overflow: auto;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: aqua;
+  margin-left: 0;
+}
+
+.front {
+  display: block;
+}
+
+.back {
+  display: none;
+  background-color: rgb(247, 73, 73);
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+/* to do list style sheet  */
+* {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  color: rgb(39, 39, 39);
+  background-color: #cdeeff;
+  user-select: none;
+}
+
+.to-do-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 80px;
+  overflow: auto;
+}
+
+.cute-cat {
+  text-align: center;
+  max-width: 350px;
+}
+
+/* button {
+  display: block;
+  width: 88%;
+  margin: 0 auto;
+  padding: 13px 15px;
+  margin-top: 1.8em;
+  border-radius: 0.6em;
+  border: none;
+  background-color: rgb(58, 58, 58);
+  color: white;
+}
+
+button:hover {
+  background-color: rgb(23, 23, 23);
+  cursor: pointer;
+} */
+
+input {
+  width: 80%;
+  padding: 13px 15px;
+  border: none;
+  background-color: rgb(162, 186, 244);
+  color: white;
+  border-radius: 0.6em;
+  text-align: center;
+}
+
+input:focus {
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 8px;
+  padding-bottom: 1.3em;
+}
+
+ul .to-do-item {
+  list-style-type: none;
+  background-color: lightgreen;
+  padding: 0.5em 0.5em;
+  border-radius: 1rem;
+  flex-grow: 1;
+  font-size: 0.8rem;
+}
+
+ul .to-do-item:hover {
+  background-color: rgb(120, 240, 120);
+  cursor: pointer;
+}
+
+p {
+  font-size: 0.7rem;
 }

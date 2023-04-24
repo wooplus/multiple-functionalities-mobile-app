@@ -10,6 +10,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <!-- main css styles  -->
+    <link rel="stylesheet" href="../styles.css" />
     <!-- local css styles  -->
     <link
       rel="stylesheet"
@@ -26,7 +28,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary">
@@ -46,25 +48,25 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-item-list">
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../index.html"
+              <a class="nav-link" aria-current="page" href="../index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../event-reminder/index.html"
                 >Events Reminder</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./bryan-mobile-app/index.html"
+              <a class="nav-link" href="../to-do-list/index.html"
                 >Lists Reminder</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Flash Card</a>
+              <a class="nav-link" href="../flashcards/index.html">Flash Card</a>
             </li>
           </ul>
         </div>
@@ -78,7 +80,7 @@
           type="text"
           placeholder="Wake up at 5 a.m."
           id="input-field"
-          class="form-control"
+          class="date-control"
         />
         <input
           my-date-format="DD/MM/YYYY, hh:mm:ss"
@@ -88,7 +90,9 @@
           class="datetime"
         />
 
-        <button class="btn btn-warning" id="add-btn">Add to Event</button>
+        <button class="btn btn-secondary mt-1 mb-1" id="add-btn">
+          Add to Event
+        </button>
         <ul class="reminder-tasks" id="reminder-tasks">
           <li>
             Talk with mommy 🕰️ <span>Mon Jun 12 2023 at 7:30:00 PM 👨🏻‍💻</span>
@@ -96,7 +100,7 @@
         </ul>
       </div>
       <div class="footer">
-        <h6>Made With 💝 By Bryan on 22th April 2023 &copy;</h6>
+        <h6>Made With 💝 By Bryan &copy; Wooplus</h6>
       </div>
     </div>
 
